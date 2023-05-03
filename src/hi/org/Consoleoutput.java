@@ -7,7 +7,7 @@ public static void main(String[] args) {
 	//main 매소드 블락에서 프로그램 작성
 
 
-	//1.system.out.println ();
+	//1.system.out.println (); : 출력하고 엔터가 들어간다.
 	
 //문자열 출력 : " "->처리함
 	System.out.println("안녕하세여");
@@ -46,6 +46,30 @@ public static void main(String[] args) {
 	System.out.println(a);
 	 System.out.println(a +b);
 	 System.out.println(a+"b");
+	 
+	 
+	 System.out.println("----------------------------------");
+	 
+	 //2.system.out.print (); : 출력후 개행하지 않는다.
+	 
+	 System.out.print( "안녕" );
+	 System.out.print( "하세요\n" );
+	 
+	 
+	//3.system.out.printf(); : 자료형 포멧에 따라 출력을 할수 있다.
+	 
+	 System.out.printf("%d\n", 30);  // %d : 10진수로 출력
+	 System.out.printf("%o\n" , 30); //%o : 8진수로 출력
+	 System.out.printf("%x\n" , 30); //%x : 16진수로 출력
+	
+	 System.out.println("----------------------------------------");
+	 
+	 System.out.printf("%s\n","문자열 출력"); //%s : 문자열을 출력
+	 System.out.printf("%f\n", 5.8); //%f : 실수를 가지고 올떄 
+	 System.out.printf("%4.2f\n", 5.8); //%4.2f : 전체 4자리소주점 이하 2자리
+	 System.out.printf("%d 와 %4.2f 를 출력합니다." , 4 , 5.8);
+	 
+	 
 	 
 
 
