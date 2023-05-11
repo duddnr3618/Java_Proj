@@ -68,7 +68,7 @@ public class Ex0 {
 				}
 				// 배열의 값을 출력 (3가지)
 				// 배열의 저장된 내용을 for문으로 출력
-				for ( i = 0; i < arr1.length; i++) {
+				for (i = 0; i < arr1.length; i++) {
 					System.out.print(arr1[i] + " ");
 				}
 				System.out.println("\n\n");
@@ -83,9 +83,44 @@ public class Ex0 {
 
 			} else if (n == 3) {
 				System.out.println("인풋값을 받아서 방의 크기를 지정하고 3의 배수만 지정하는데 그 중 6의 배수인 경우 빼고 저장후 출력");
+				System.out.println(" 배열의 방 크기를 입력하여 정수값으로 넣어주세요");
+				idx = sc.nextInt();
+				arr1 = new int [idx];
+				
+				int i = 0; // 배열의 방번호
+				int a; // 배열 방에 들어가는 값
+				for (a = 1; true; a++) {
+					if ((a % 3 == 0) && (a % 6 != 0)) {		//a가 3의 배수일때 / //a가 6의 배수가 아닐때
+						 	arr1[i] = a;
+							i++;
+						
+					
+				}
+					
+					//for문으로 출력
+					for (i = 0 ; i<arr1.length ; i++) {
+						System.out.print(arr1[i] + " ");
+					}
+					System.out.println("\n\n");
+					
+					//향상된 for문으로 출력
+					for(int k : arr1) {
+						System.out.print(k + " ");
+					}
+			
+					System.out.println("\n\n");
+					//Arrays.toString()으로 출력
+					System.out.println(Arrays.toString(arr1));
 
+					System.out.println("\n\n");
+					
+					if (i == idx)
+						break;
+				}
+				/////////////////////////////////////////////////
 			} else if (n == 4) {
-				System.out.println(".프로그램 종료");
+				System.out.println("프로그램 종료");
+				break;
 
 			} else {
 				System.out.println("1~4까지 정수를 입력하세요");
