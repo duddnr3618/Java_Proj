@@ -29,7 +29,7 @@ public class Ex01 {
 					if (i%7==0) {
 						System.out.println(i + " ");
 					}
-					 for 
+					 
 					
 
 					}
