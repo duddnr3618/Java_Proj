@@ -44,14 +44,13 @@ public class Ex02 {
 	void avgMaxSpeed (Car [] arr) {
 		//현대자동차의 배열의 저장된 최대스피드의 평균을 출력
 		double avg=0.0; 
-		int k;
 		for (int i = 0 , sum = 0; i < arr.length ; i++) {
 			if ( arr[i] instanceof HCar) {
 				HCar c = (HCar) arr[i] ;
 				sum += c.maxSpeed;
 				
 		}
-			avg = sum / arr.length;
+			avg = (double) ( sum / arr.length);
 	}
 		System.out.println("현대자동차의 평균 속도는 : " + avg  + " 입니다.");
 	}
