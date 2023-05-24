@@ -48,9 +48,25 @@ public class Ex01 {
 	//배열의 객체를 매개변수로 받아서 총 가격을 출력
 	
 	void totalPrice (Object [] obj) {
+		//합계를 구하는 변수 선언
+		int totalApple = 0;			//사과 총 가격 : price * count
+		int totalBanana = 0;		//바나나 총 가격 : price * count
+		int totalStroberry = 0;		//딸기 총 가격 : price * count
 		
-		
+		//배열 변수로 선언
+		int [] total = new int [3];	//total[0] = apple / total[1] = banana / total [2] = stroberey
+		if ( obj[0] instanceof Apple) {
+		total [0] = ((Apple) obj[0] ).price * ((Apple) obj[0] ).count;
+		}if ( obj[1] instanceof Banana) {
+		total [1] = ((Banana) obj[1] ).price * ((Banana) obj[1] ).count;
+		} if ( obj[2] instanceof Stroberry) {
+		total [2] = ((Stroberry) obj[2] ).price * ((Stroberry) obj[2] ).count;
+		}
 	
+		System.out.println("사과의 총 합은 : " + total[0]);
+		System.out.println("바나나의 총 합은 : " + total[1]);
+		System.out.println("딸기의 총 합은 : " + total[2]);
+		System.out.println("모든 과일의 총 합은 : " + (total[0] + total[1] + total [2]));
 			
 	}
 		
@@ -72,23 +88,15 @@ public class Ex01 {
 		Banana b = new Banana ("바나나",4000,10) ;
 		Stroberry s = new Stroberry ("딸기",5000,30) ;
 		
+		Object [] obj = new Object [] {a,b,s};	//사과,바나나,딸기의 타입은 다 다르기때문에 오브젝트 타입으로 업캐스팅해 배열에 지정
+		//a,b,s : 업캐스팅되어 오브젝트 필드 메소드만 접근이가능.
 		
-		Object [] obj = new Object [] {a,b,s};
+		//메소드 호출
+		Ex01 e1 = new Ex01 ();
+		e1.totalPrice(obj);
 		
-		Ex01 ex = new Ex01 ();
-		ex.totalPrice(obj);
 	
-		int [] sum = new int [3];
-		for ( int i = 0 ; i < obj.length ; i++) {
-			sum[0] = ((Apple)obj[i]).count ;
-			sum[1] = ((Banana)obj[i]).count;
-			sum[2] = ((Stroberry)obj[i]).count;	
-		}
 		
-		
-		System.out.println("사과의 총 합은 : " + sum[0]);
-		System.out.println("바나나의 총 합은 : " + sum[1]);
-		System.out.println("딸기의 총 합은 : " + sum[2]);
 		
 	}
 
