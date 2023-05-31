@@ -44,6 +44,7 @@ public class Array_List {
 		aList.remove("다");
 		aList.remove("바");
 		System.out.println("List의 방의 크기 : " + aList.size());
+		System.out.println(aList);
 		
 		
 	}
