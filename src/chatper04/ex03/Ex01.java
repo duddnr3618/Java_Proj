@@ -1,4 +1,4 @@
-package chatper04.ex03;
+package chapter04.ex03;
 
 import java.util.Scanner;
 

@@ -24,7 +24,7 @@ public class Ex02 {
 		for (int i = 0; i < arr1.length; i++) { //출력
 			System.out.print(arr1[i] + " ");
 			if ( (i +1)%10 ==0 ) {
-				System.out.println();
+				System.out.println("\n");
 			}
 			
 		}

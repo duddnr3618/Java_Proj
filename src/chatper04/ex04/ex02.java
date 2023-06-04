@@ -1,4 +1,4 @@
-package chatper04.ex04;
+package chapter04.ex04;
 
 public class ex02 {
 	public static void main(String[] args) {

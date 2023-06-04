@@ -1,4 +1,4 @@
-package chatper04.ex05;
+package chapter04.ex05;
 
 public class Do_while_ {
 	public static void main(String[] args) {

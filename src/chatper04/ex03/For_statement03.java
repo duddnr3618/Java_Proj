@@ -1,4 +1,4 @@
-package chatper04.ex03;
+package chapter04.ex03;
 
 public class For_statement03 {
 	public static void main(String[] args) {

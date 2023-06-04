@@ -1,4 +1,4 @@
-package chatper04.ex02;
+package chapter04.ex02;
 
 public class Swich_statement {
 public static void main(String[] args) {

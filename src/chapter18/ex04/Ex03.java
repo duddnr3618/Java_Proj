@@ -9,6 +9,7 @@ class Member {
 	
 	String memberID;
 	String memberName ;
+	
 	Member(String memberID , String memberName) {
 		this.memberID = memberID;
 		this.memberName = memberName;

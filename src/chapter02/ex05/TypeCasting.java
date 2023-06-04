@@ -24,7 +24,7 @@ public class TypeCasting {
 		int val4 = (int)5.8;
 		long val5 =(long) 10.000344;
 		System.out.println(val4);
-		System.out.println(val5);  // 한 라인 복사 : ctrl + aart + 화살표
+		System.out.println(val5);  // 한 라인 복사 : ctrl + alt + 화살표
 		
 		//업캐스팅(자동)
 		float val6 = 5;			//float val6 = (float)5; ->생략이 가능하다.
