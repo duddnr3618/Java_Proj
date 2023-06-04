@@ -13,8 +13,9 @@ class Member {
 	Member(String memberID , String memberName) {
 		this.memberID = memberID;
 		this.memberName = memberName;
-	}
+
 	
+}	
 	//객체를 출력시 필드의 내용을 출력
 		@Override
 		public String toString() {

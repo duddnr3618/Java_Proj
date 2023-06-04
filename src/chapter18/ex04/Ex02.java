@@ -1,6 +1,7 @@
 package chapter18.ex04;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Objects;
 import java.util.Set;
 
@@ -10,11 +11,11 @@ class Student {
 	String stiPhine;
 	
 	//생성자 자동 호출 : alt+shift+s -> constructor field
-	public Student(int stuID, String stuName, String stiPhine) {
+	public Student(int stuID, String stuName, String stiPhone) {
 		super();
 		this.stuID = stuID;
 		this.stuName = stuName;
-		this.stiPhine = stiPhine;
+		this.stiPhine = stiPhone;
 	}
 	
 	//equals()
@@ -59,11 +60,27 @@ public class Ex02 {
 		Student s4 = new Student (123 , "홍길포" , "114");
 		Student s5 = new Student (123 , "홍길파이브" , "115");
 		
+		//Set에 값을 할당.
 		hset.add(s1); hset.add(s2); hset.add(s3); hset.add(s4); hset.add(s5);
 		System.out.println(hset);
 		System.out.println(hset.size());
 		
+		System.out.println("======= Set에 저장된 값을 출력 : Iterator ===========");
+		Iterator ir = hset.iterator();	
+		while (ir.hasNext()) {		//has.Next -> 돌아가면서 값이 존재하면 true면서 돌아간다.
+			System.out.print(ir.next());	
+		}
+		System.out.println();
+		System.out.println();
 		
+		
+		
+		System.out.println("======= Set에 저장된 값을 출력 : Enhance for문  ===========");
+		for ( Student k : hset) {
+			System.out.print(k);
+			
+		}
+		System.out.println();
 		
 
 	}

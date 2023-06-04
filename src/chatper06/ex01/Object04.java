@@ -103,6 +103,7 @@ public class Object04 {
 		System.out.println(out3);
 		out3.print();
 		
+		System.out.println();
 		
 		
 		
